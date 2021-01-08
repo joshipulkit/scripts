@@ -1,0 +1,6 @@
+#!/bin/bash
+
+sudo apt update			# updates the repos
+sudo apt upgrade -y		# upgrades all the upgradable packages (recommended to use after the update command)
+sudo apt autoremove -y		# removes all the dependecies and packages which are not required by any other installed packages
+sudo apt autoclean		# cleans the apt cache
