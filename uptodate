@@ -6,4 +6,4 @@ sudo apt autoremove -y			# removes all the dependecies and packages which are no
 sudo apt autoclean			# cleans the apt cache
 sudo rm -rf ~/.cache/thumbnails/*	# clears thumbnail cache
 echo "Thumbnail cache cleared!"
-echo 'You can check the cache size using "du -hs ~/.cache/thumbnails/*"'
+echo 'You can check the cache size using "du -hs ~/.cache/thumbnails/"'
