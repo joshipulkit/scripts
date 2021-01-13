@@ -5,3 +5,5 @@ sudo apt upgrade -y			# upgrades all the upgradable packages (recommended to use
 sudo apt autoremove -y			# removes all the dependecies and packages which are not required by any other installed packages
 sudo apt autoclean			# cleans the apt cache
 sudo rm -rf ~/.cache/thumbnails/*	# clears thumbnail cache
+echo "Thumbnail cache cleared!"
+echo 'You can check the cache size using "du -hs ~/.cache/thumbnails/*"'
