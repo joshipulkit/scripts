@@ -1,7 +1,14 @@
 #!/bin/bash
 
-### A manual AUR helper to download packages from Arch User Repository.  ###
-### Follow the instructions. Each line explains its use ###
+### INSTRUCTIONS ###
+# A manual AUR helper to download packages from Arch User Repository.
+# Follow the instructions. Each line explains its use.
+# Go to https://aur.archlinux.org
+# Search for the AUR you want to install your system.
+# Copy the 'Git Clone URL'
+
+### USAGE ###
+# $ aurinstall <Git Clone URL>
 
 PATH_TO_AUR_PACKAGES=/home/pulkit/aurpkgs/      # Set the path where all AUR packages are installed
 CURRENT_WORK_DIR=`pwd`                          # Because eventually, we would like to retun to where we are at present
