@@ -1,0 +1,16 @@
+#!/bin/bash
+
+### A manual AUR helper to download packages from Arch User Repository.  ###
+### Follow the instructions. Each line explains its use ###
+
+PATH_TO_AUR_PACKAGES=/home/pulkit/aurpkgs/      # Set the path where all AUR packages are installed
+CURRENT_WORK_DIR=`pwd`                          # Because eventually, we would like to retun to where we are at present
+AUR_GIT_CLONE_URL=$1                            # Takes in the first argument in cli - git clone url from https://aur.archlinux.org
+AUR_NAME=${AUR_GIT_CLONE_URL%.git*}             # Cutting the git clone url to input just the name of AUR
+AUR_NAME=${AUR_NAME##*/}
+
+cd $PATH_TO_AUR_PACKAGES                        # Change into path where all AUR packages are installed
+git clone $AUR_GIT_CLONE_URL                    # Cloning the AUR git repo
+cd $AUR_NAME                                    # Move into the cloned AUR directory
+makepkg -si                                     # Finds the "PKGBUILD" file and compiles and installs it on the system. This might require you to enter your sudo password at some point.
+cd $CURRENT_WORK_DIR                            # Return to where we were before using "aurinstall" tool
