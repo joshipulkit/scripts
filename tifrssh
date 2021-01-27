@@ -1,0 +1,42 @@
+#!/bin/bash
+
+MACHINE=$1
+# echo $MACHINE
+
+case $MACHINE in
+    
+    falcon)
+        echo "Logging into FALCON"
+        ssh -X pulkit@158.144.60.230
+        ;;
+    
+    bluejay)
+        echo "Logging into BLUEJAY"
+        ssh -X pulkit@158.144.60.220
+        ;;
+
+    magpie)
+        echo "Logging into MAGPIE"
+        ssh -X pulkit@158.144.60.219
+        ;;
+
+    raven)
+        echo "Logging into RAVEN"
+        ssh -X pulkit@158.144.60.239
+        ;;
+
+    cchpc)
+        echo "Logging into CCHPC19"
+        ssh -X pulkit@158.144.1.245
+        ;;
+
+    toucan)
+        echo "Logging into TOUCAN"
+        ssh -X pulkit@158.144.60.184
+        ;;
+
+    *)
+        echo "This TIFR machine is not recognised by ARKENSTONE!"
+        ;;
+
+esac
