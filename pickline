@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+
+DESIRED_LINE=$1
+FROM_FILE=$2
+
+head -$DESIRED_LINE $FROM_FILE | tail -1
