@@ -4,10 +4,10 @@
   [[default]]
     background_color = "#282828"
     cursor_color = "#aaaaaa"
-    font = mononoki 15
     foreground_color = "#ebdbb2"
+    show_titlebar = False
     scrollbar_position = hidden
-    use_system_font = False
+    scroll_on_keystroke = False
 [layouts]
   [[default]]
     [[[window0]]]
