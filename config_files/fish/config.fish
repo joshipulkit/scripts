@@ -4,14 +4,12 @@
 
 
 ### ADDING TO PATH ###
-
 # Add /home/pulkit/bin to PATH
 export PATH="/home/pulkit/bin:$PATH"
 # Add /home/pulkit/.local/bin to PATH
 export PATH="/home/pulkit/.local/bin:$PATH"
 # Add /home/pulkit/packages/psi4conda/bin to PATH
 #export PATH="/home/pulkit/packages/psi4conda/bin:$PATH"
-
 ### PATH ENDS ###
 
 
@@ -48,17 +46,15 @@ bind '$' __history_previous_command_arguments
 
 
 ### ALIASES ###
-
+alias ls='ls -F --color=auto'
 alias vi='vim'
 alias lrt='ls -lrth'
 alias psi4='/home/pulkit/packages/psi4conda/bin/psi4'
 alias restartfish='source /home/pulkit/.config/fish/config.fish'
-
 ### ALIASES END ###
 
 
 ### USED DEFINED FUNCTIONS ###
-
 # for printing a column (splits input on whitespaces)
 function grabcol
     while read -l input
